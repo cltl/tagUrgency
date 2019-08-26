@@ -1,8 +1,8 @@
 # TagUrgency
 
-This repository provides a basic tagger which identifies words and expressions of urgency in text . The expressions are classified in 5 different categories: Time, Loss, Gain, Deontic, Action.
+This repository provides a basic tagger which identifies words and expressions of urgency in text. The expressions are classified in 5 different categories: Time, Loss, Gain, Deontic, Action.
 
-More information about the project can be found here: https://www.overleaf.com/2861564192fkcrgntpzwgn
+The tagger has been developed to detect phishing mails. More information can be found here: https://github.com/cltl/tagUrgency/blob/master/Phishingmails.pdf
 
 
 Version: 0.1
