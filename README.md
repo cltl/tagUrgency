@@ -1,7 +1,10 @@
 # TagUrgency
 
-This repository provides a basic tagger which identifies words and expressions of urgency in text . The 
-version: 0.1
+This repository provides a basic tagger which identifies words and expressions of urgency in text . The expressions are classified in 5 different categories: Time, Loss, Gain, Deontic, Action.
+More information can be found here: 
+
+
+Version: 0.1
 
 Dependencies:
 
@@ -10,7 +13,10 @@ Dependencies:
 Usage:
 
 - python cnt_urgency.py input_directory
-- some variables are hard-coded (see cnt_urgency.py "variables")
+- some variables can be modified (see cnt_urgency.py "variables")
+-- threshold = 1          # used for classification , refers to number of urgency_expressions per text; n>=threshold is --phishing, n< threshold = non-phishing
+-- min_fsz = 200          # files smaller than min_fsz kb will be discarded
+-- max_fsz = 5000         # files larger than max`_fsz kb will be discarded
 
 Input:
 
@@ -20,22 +26,6 @@ Output:
 
 - screendump with information about number of processed files and total number urgency expressions
 - csv file (_countUrgencyResults.csv) with number of urgency expressions per file
-
-Expressions of urgency:
-
-time=["binnenkort", "urgentie","meerdere malen","laatste","op tijd"," eerder "," gauw","dringend","meteen ","onmiddellijk", " snel ",  " spoedig ", "terstond" ,   "zojuist", " dadelijk" ," op dit moment " , "eenmalig ", "eenmalige "]
-deon=[" moet","verplicht"," dient", " dienen", " moeten","genoodzaakt"]
-lost=["vervelende consequenties", "geen toegang meer","geen betalingsregeling meer","betalingsachterstand","aanmaning","ongelezen","opheffen","afgekeurd","geen geld meer","schuld","naheffing","gerechtsdeurwaarder","beslag ","ongeldig", "verlopen", " vervalt", " verval ","schorsing", "erger", "verloopt", " verouderd","nadelig","geblokkeerd" ,"blokkade","blokkeren","blokkering","beperkt","gijzeling", "verouderd"]
-action=["[hier]","let op","heraanvraag","voorkomen", "voorkom "," voorkomt ","klikken"," klik ", "[klik" , "opsturen","direct betalen","verifieer", "verifieert", "verifieren","voldoen", "voldoet", "start"]
-gain=["kosteloos","deblokkeren","vervangen","beter beveiligd","gratis","vernieuwd","verbeterd" ,"toegang herstellen"]
-
-
-Features Coming up:
-
-Options:
-- apply to single file instead of directory
-- only string match or only lemma match
-- option to set pointer to resource or to retrieve it from the resource itself
 
 
 For questions contact:
