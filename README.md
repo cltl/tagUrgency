@@ -1,7 +1,8 @@
 # TagUrgency
 
 This repository provides a basic tagger which identifies words and expressions of urgency in text . The expressions are classified in 5 different categories: Time, Loss, Gain, Deontic, Action.
-More information can be found here: 
+
+More information about the project can be found here: https://www.overleaf.com/2861564192fkcrgntpzwgn
 
 
 Version: 0.1
@@ -14,11 +15,12 @@ Usage:
 
 - python cnt_urgency.py input_directory
 
-Variables
+Variables:
+
 Some variables can be modified (see cnt_urgency.py "variables")
-- threshold = 1          # used for classification , refers to number of urgency_expressions per text; n>=threshold is --phishing, n< threshold = non-phishing
-- min_fsz = 200          # files smaller than min_fsz kb will be discarded
-- max_fsz = 5000         # files larger than max`_fsz kb will be discarded
+- threshold = 1          (used for classification , refers to number of urgency_expressions per text; n>=threshold is --phishing, n< threshold = non-phishing)
+- min_fsz = 200          (files smaller than min_fsz kb will be discarded)
+- max_fsz = 5000         (files larger than max`_fsz kb will be discarded)
 
 Input:
 
