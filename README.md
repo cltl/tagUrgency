@@ -13,10 +13,12 @@ Dependencies:
 Usage:
 
 - python cnt_urgency.py input_directory
-- some variables can be modified (see cnt_urgency.py "variables")
--- threshold = 1          # used for classification , refers to number of urgency_expressions per text; n>=threshold is --phishing, n< threshold = non-phishing
--- min_fsz = 200          # files smaller than min_fsz kb will be discarded
--- max_fsz = 5000         # files larger than max`_fsz kb will be discarded
+
+Variables
+Some variables can be modified (see cnt_urgency.py "variables")
+- threshold = 1          # used for classification , refers to number of urgency_expressions per text; n>=threshold is --phishing, n< threshold = non-phishing
+- min_fsz = 200          # files smaller than min_fsz kb will be discarded
+- max_fsz = 5000         # files larger than max`_fsz kb will be discarded
 
 Input:
 
